@@ -1,0 +1,14 @@
+services:
+  trustcrow-db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: trustcrow
+      POSTGRES_DB: trustcrowdb
+    volumes:
+      - trustcrow-db:/var/lib/postgresql/data
+
+volumes: 
+  trustcrow-db:

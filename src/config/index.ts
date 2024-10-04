@@ -8,5 +8,9 @@ const env: IEnvironments = environments[environment];
 export const config = {
   port: env.PORT,
   environment: env.ENVIRONMENT,
-  dbUrl: env.DB_URL
+  dbHost: env.DB_HOST,
+  dbPort: env.DB_PORT,
+  dbUser: env.DB_USER,
+  dbPassword: env.DB_PASSWORD,
+  dbName: env.DB_NAME
 };
