@@ -14,3 +14,11 @@ export const getCategoryBySlug = async(slug: string) => {
 export const getCategoryById = async(id: number) => {
     return await db.oneOrNone(categoryQueries.getCategoryById, [id])
 }
+
+export const deleteCategory = async(id: number) => {
+    return await db.result(categoryQueries.deleteCategory, [id])
+}
+
+export const updateCategoryParent = async(id: number, parentId?: number) => {
+    return await db.oneOrNone(categoryQueries.updateCategoryParent, [id, parentId])
+}

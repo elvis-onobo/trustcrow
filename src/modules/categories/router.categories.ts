@@ -12,3 +12,14 @@ router.post(
   CategoryMiddleware.parentCategoryExistsById,
   CategoryController.createCategory
 );
+
+router.delete("/category", 
+    CategoryMiddleware.categoryExistsById,
+    CategoryController.deleteCategory
+);
+
+router.patch("/category",
+    CategoryMiddleware.categoryExistsById,
+    CategoryMiddleware.parentCategoryExistsById,
+    CategoryController.updateCategoryParent
+)

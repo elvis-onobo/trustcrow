@@ -8,3 +8,15 @@ export const createCategory = async (req:Request, res:Response) => {
     const data = await categoryService.createCategory(name, parentId)
     return response.success(res, "Category created successfully", 201, data)
 }
+
+export const deleteCategory = async (req:Request, res:Response) => {
+    const { id } = req.query
+    await categoryService.deleteCategory(Number(id))
+    return response.success(res, "Category deleted successfully", 200)
+}
+
+export const updateCategoryParent = async (req:Request, res:Response) => {
+    const { categoryId, parentId } = req.body
+    const data = await categoryService.updateCategoryParent(Number(categoryId), Number(parentId))
+    return response.success(res, "Category parent updated successfully", 200, data)
+}
