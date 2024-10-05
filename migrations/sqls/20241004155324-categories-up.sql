@@ -1,1 +1,6 @@
-/* Replace with your SQL commands */
+CREATE TABLE categories (
+    id SERIAL PRIMARY KEY,
+    category_name VARCHAR(255) UNIQUE NOT NULL,
+    slug VARCHAR(255) UNIQUE NOT NULL,
+    parent_id INTEGER NULL REFERENCES categories(id) ON DELETE CASCADE
+);

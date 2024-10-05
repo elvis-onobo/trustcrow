@@ -1,8 +1,9 @@
 import { config } from '../index';
-import pgPromise, { IMain } from 'pg-promise';
+import pgp, { IMain } from 'pg-promise';
+import promise from "bluebird";
 import logger from '@/utils/logger';
 import { DatabaseConfig } from './interface.db'
-
+import * as environments from "@utils/globals/enums/environments.enum"
 class Database {
     private host: string;
     private port: number;
@@ -12,7 +13,7 @@ class Database {
     private db: any;
 
     constructor({ host, port, database, user, password }: DatabaseConfig) {
-        if (![host, port, database, user, password].every(v => v != null)) {
+        if (![host, port, database, user, password].every(value => value != null)) {
             throw new Error('All database connection parameters must be provided.');
         }
         this.host = host;
@@ -23,27 +24,24 @@ class Database {
         this.db = null;
     }
 
-    private async setup() {
-        const connectParams = {
+    public connect() {
+        const pg = pgp({ promiseLib: promise, noWarnings: false });
+        const initOptions = {
             host: this.host,
-            port: this.port,
-            database: this.database,
             user: this.user,
-            password: this.password
-        };
-        const pgp: IMain = pgPromise();
-        const dbInstance = pgp(connectParams);
-        return dbInstance
-    }
-    
-    public async connect() {
-        if (!this.db) {
-            this.db = await this.setup();
+            port: this.port,
+            password: this.password,
+            database: this.database,
         }
-        logger.info(`Connected to database ${this.database}`);
-        return this.db;
+        const client = pg(initOptions);
+
+        client.connect().then(instance => {
+            logger.info(`Connected to database: ${instance.client.database}`);
+        }).catch(err => (config.environment != environments.TEST) ? logger.error(err): console.log(err))
+        return client;
     }
 }
 
-const db = new Database({ host: config.dbHost, port: config.dbPort, database: config.dbName, user: config.dbUser, password: config.dbPassword });
-export default db.connect();
+const instance = new Database({ host: config.dbHost, port: config.dbPort, database: config.dbName, user: config.dbUser, password: config.dbPassword });
+const db = instance.connect()
+export default db

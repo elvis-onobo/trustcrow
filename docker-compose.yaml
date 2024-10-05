@@ -5,10 +5,12 @@ services:
     shm_size: 128mb
     environment:
       POSTGRES_PASSWORD: password
-      POSTGRES_USER: trustcrow
       POSTGRES_DB: trustcrowdb
+      POSTGRES_USER: postgres
     volumes:
       - trustcrow-db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
 
 volumes: 
   trustcrow-db:
