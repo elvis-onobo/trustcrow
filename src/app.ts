@@ -1,9 +1,9 @@
 import "express-async-errors";
 import express, { Application } from "express";
 import "dotenv/config";
-import { errorMiddleware } from "@utils/globals/middleware/error.middleware";
+import { errorMiddleware } from "./utils/globals/middleware/error.middleware";
 import { categoryRouter } from "./routes"
-import db from '@/config/db/index'
+import db from './config/db/index'
 
 const app: Application = express();
 

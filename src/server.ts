@@ -1,5 +1,5 @@
 import app from "./app";
-import logger from "@/utils/logger";
+import logger from "./utils/logger";
 
 const PORT: number = Number(process.env.PORT) || 3005;
 

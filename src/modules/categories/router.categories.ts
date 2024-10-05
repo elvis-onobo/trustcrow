@@ -1,8 +1,8 @@
-import { Router } from "express";
+import express from "express";
 import * as CategoryController from "./controller.categories";
 import * as CategoryMiddleware from "./middleware.categories";
 
-const router = Router();
+const router = express.Router();
 export default router;
 
 //add validation

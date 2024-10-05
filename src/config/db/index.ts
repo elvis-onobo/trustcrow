@@ -1,9 +1,9 @@
 import { config } from '../index';
 import pgp, { IMain } from 'pg-promise';
 import promise from "bluebird";
-import logger from '@/utils/logger';
+import logger from '../../utils/logger';
 import { DatabaseConfig } from './interface.db'
-import * as environments from "@utils/globals/enums/environments.enum"
+import * as environments from "../../utils/globals/enums/environments.enum"
 class Database {
     private host: string;
     private port: number;

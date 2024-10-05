@@ -1,6 +1,6 @@
-import db from "@/config/db"
+import db from "../../config/db"
 import * as categoryQueries from "./queries.categories"
-import * as helpers from "@utils/globals/helpers"
+import * as helpers from "../../utils/globals/helpers"
 
 export const createCategory = async(name: string, parentId?: number) => {
     const slug = helpers.slugify(name)

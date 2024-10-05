@@ -1,5 +1,5 @@
 import { format, createLogger, transports } from "winston";
-import {config} from '@config/index'
+import {config} from '../config/index'
 
 const { combine, timestamp, errors, json, colorize, printf } = format;
 

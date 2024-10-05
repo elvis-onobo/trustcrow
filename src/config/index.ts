@@ -1,7 +1,7 @@
 import environments from "./setup";
 import { IEnvironments } from "./interface.config";
 
-const environment: string = process.env.ENVIRONMENT as unknown as string;
+const environment: string = process.env.NODE_ENV as unknown as string;
 
 const env: IEnvironments = environments[environment];
 

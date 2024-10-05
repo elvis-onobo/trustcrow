@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1728150751043" clover="3.2.0">
+  <project timestamp="1728150751043" name="All files">
+    <metrics statements="177" coveredstatements="163" conditionals="23" coveredconditionals="12" methods="39" coveredmethods="36" elements="239" coveredelements="211" complexity="0" loc="177" ncloc="177" packages="9" files="17" classes="17"/>
+    <package name="src">
+      <metrics statements="19" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="app.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/app.ts">
+        <metrics statements="17" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="routes.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/routes.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.config">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/config/index.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="setup.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/config/setup.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.config.config.environments">
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="development.config.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/config/config.environments/development.config.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="test.config.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/config/config.environments/test.config.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.config.db">
+      <metrics statements="23" coveredstatements="21" conditionals="3" coveredconditionals="0" methods="5" coveredmethods="4"/>
+      <file name="index.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/config/db/index.ts">
+        <metrics statements="23" coveredstatements="21" conditionals="3" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="16" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.modules.categories">
+      <metrics statements="84" coveredstatements="79" conditionals="6" coveredconditionals="6" methods="26" coveredmethods="26"/>
+      <file name="controller.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/controller.categories.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+      <file name="middleware.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/middleware.categories.ts">
+        <metrics statements="35" coveredstatements="30" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="25" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="38" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+      <file name="queries.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/queries.categories.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="router.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/router.categories.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+      <file name="service.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/service.categories.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="17" coveredstatements="16" conditionals="10" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <file name="logger.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/utils/logger.ts">
+        <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="22" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+      </file>
+      <file name="response.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/utils/response.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils.globals">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="helpers.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/utils/globals/helpers.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils.globals.enums">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="environments.enum.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/utils/globals/enums/environments.enum.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils.globals.middleware">
+      <metrics statements="7" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="error.middleware.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/utils/globals/middleware/error.middleware.ts">
+        <metrics statements="7" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
