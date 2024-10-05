@@ -16,17 +16,20 @@ router.post(
 );
 
 router.delete("/category", 
+    Validator.validateQueryParam(CategoryValidator.id),
     CategoryMiddleware.categoryExistsById,
     CategoryController.deleteCategory
 );
 
 router.patch("/category",
+    Validator.validateBody(CategoryValidator.updateCategoryParent),
     CategoryMiddleware.categoryExistsById,
     CategoryMiddleware.parentCategoryExistsById,
     CategoryController.updateCategoryParent
 )
 
 router.get("/subcategories", 
+    Validator.validateQueryParam(CategoryValidator.id),
     CategoryMiddleware.categoryExistsById,
     CategoryController.getSubcategories
 )

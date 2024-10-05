@@ -81,7 +81,7 @@ describe("Category", () => {
         const { success, status, message, data } = response.body;
         expect(success).toBeFalsy()
         expect(status).toBe(400);
-        expect(message).toBe("Category check failed");
+        expect(message).toBe("\"categoryId\" is required");
     })
 
     it("PATCH /category should update the parent of a subcategory", async () => {
