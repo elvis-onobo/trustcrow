@@ -20,3 +20,9 @@ export const updateCategoryParent = async (req:Request, res:Response) => {
     const data = await categoryService.updateCategoryParent(Number(categoryId), Number(parentId))
     return response.success(res, "Category parent updated successfully", 200, data)
 }
+
+export const getSubcategories = async(req: Request, res: Response) => {
+    const { id } = req.query
+    const data = await categoryService.getSubcategories(Number(id))
+    return response.success(res, "Subcategories retrieved successfully", 200, data)
+}

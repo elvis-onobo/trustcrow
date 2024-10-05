@@ -23,3 +23,8 @@ router.patch("/category",
     CategoryMiddleware.parentCategoryExistsById,
     CategoryController.updateCategoryParent
 )
+
+router.get("/subcategories", 
+    CategoryMiddleware.categoryExistsById,
+    CategoryController.getSubcategories
+)

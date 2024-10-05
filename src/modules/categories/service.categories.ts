@@ -22,3 +22,7 @@ export const deleteCategory = async(id: number) => {
 export const updateCategoryParent = async(id: number, parentId?: number) => {
     return await db.oneOrNone(categoryQueries.updateCategoryParent, [id, parentId])
 }
+
+export const getSubcategories = async(id: number) => {
+    return await db.query(categoryQueries.getSubcategories, [id])
+}
