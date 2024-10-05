@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1728150751043" clover="3.2.0">
-  <project timestamp="1728150751043" name="All files">
-    <metrics statements="177" coveredstatements="163" conditionals="23" coveredconditionals="12" methods="39" coveredmethods="36" elements="239" coveredelements="211" complexity="0" loc="177" ncloc="177" packages="9" files="17" classes="17"/>
+<coverage generated="1728153716332" clover="3.2.0">
+  <project timestamp="1728153716332" name="All files">
+    <metrics statements="209" coveredstatements="179" conditionals="23" coveredconditionals="12" methods="48" coveredmethods="39" elements="280" coveredelements="230" complexity="0" loc="209" ncloc="209" packages="9" files="19" classes="19"/>
     <package name="src">
       <metrics statements="19" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="app.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/app.ts">
@@ -100,7 +100,7 @@
       </file>
     </package>
     <package name="src.modules.categories">
-      <metrics statements="84" coveredstatements="79" conditionals="6" coveredconditionals="6" methods="26" coveredmethods="26"/>
+      <metrics statements="90" coveredstatements="85" conditionals="6" coveredconditionals="6" methods="26" coveredmethods="26"/>
       <file name="controller.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/controller.categories.ts">
         <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
         <line num="3" count="1" type="stmt"/>
@@ -170,16 +170,18 @@
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="router.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/router.categories.ts">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
       </file>
       <file name="service.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/service.categories.ts">
         <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12"/>
@@ -200,9 +202,16 @@
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
       </file>
+      <file name="validation.categories.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/modules/categories/validation.categories.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
     </package>
     <package name="src.utils">
-      <metrics statements="17" coveredstatements="16" conditionals="10" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <metrics statements="43" coveredstatements="26" conditionals="10" coveredconditionals="6" methods="14" coveredmethods="8"/>
       <file name="logger.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/utils/logger.ts">
         <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
@@ -225,6 +234,35 @@
         <line num="4" count="6" type="stmt"/>
         <line num="12" count="1" type="cond" truecount="0" falsecount="2"/>
         <line num="13" count="5" type="stmt"/>
+      </file>
+      <file name="validator.ts" path="/Users/elvis/Documents/workspace/web/trustcrow/src/utils/validator.ts">
+        <metrics statements="26" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.utils.globals">

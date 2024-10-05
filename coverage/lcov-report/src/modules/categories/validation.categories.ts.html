@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/modules/categories/router.categories.ts</title>
+    <title>Code coverage report for src/modules/categories/validation.categories.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/modules/categories</a> router.categories.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/modules/categories</a> validation.categories.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -82,34 +82,7 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -125,38 +98,29 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import express from "express";
-import * as CategoryController from "./controller.categories";
-import * as CategoryMiddleware from "./middleware.categories";
-import * as CategoryValidator from "./validation.categories";
-import * as Validator from "../../utils/validator"
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Joi from "joi";
 &nbsp;
-const router = express.Router();
-export default router;
+export const createCategory = Joi.object({
+  name: Joi.string().min(2).required(),
+  parentId: Joi.number().optional()
+});
 &nbsp;
-router.post(
-  "/category",
-  Validator.validateBody(CategoryValidator.createCategory),
-  CategoryMiddleware.catgoryExistsBySlug,
-  CategoryMiddleware.parentCategoryExistsById,
-  CategoryController.createCategory
-);
+export const createBusiness = Joi.object({
+  name: Joi.string().min(2).required(),
+  description: Joi.string().min(5).required(),
+  numberOfStaff: Joi.number().required(),
+});
 &nbsp;
-router.delete("/category", 
-    CategoryMiddleware.categoryExistsById,
-    CategoryController.deleteCategory
-);
-&nbsp;
-router.patch("/category",
-    CategoryMiddleware.categoryExistsById,
-    CategoryMiddleware.parentCategoryExistsById,
-    CategoryController.updateCategoryParent
-)
-&nbsp;
-router.get("/subcategories", 
-    CategoryMiddleware.categoryExistsById,
-    CategoryController.getSubcategories
-)</pre></td></tr></table></pre>
+export const updateBusiness = Joi.object({
+  id: Joi.string().min(7).required(),
+  name: Joi.string().min(2).required(),
+  description: Joi.string().min(5).required(),
+  numberOfStaff: Joi.number().required(),
+});
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

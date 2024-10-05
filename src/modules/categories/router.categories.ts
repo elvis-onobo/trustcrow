@@ -1,13 +1,15 @@
 import express from "express";
 import * as CategoryController from "./controller.categories";
 import * as CategoryMiddleware from "./middleware.categories";
+import * as CategoryValidator from "./validation.categories";
+import * as Validator from "../../utils/validator"
 
 const router = express.Router();
 export default router;
 
-//add validation
 router.post(
   "/category",
+  Validator.validateBody(CategoryValidator.createCategory),
   CategoryMiddleware.catgoryExistsBySlug,
   CategoryMiddleware.parentCategoryExistsById,
   CategoryController.createCategory
