@@ -9,7 +9,7 @@
     "migration:down": "node node_modules/db-migrate/bin/db-migrate down",
     "migration:create": "node node_modules/db-migrate/bin/db-migrate create --sql-file --table=",
     "migration:refresh": "node node_modules/db-migrate/bin/db-migrate refresh",
-    "test": "jest --detectOpenHandles --coverage",
+    "test": "jest --detectOpenHandles --coverage --forceExit",
     "pretest": "cross-env NODE_ENV=test npm run migration:down && cross-env NODE_ENV=test npm run migration:up"
   },
   "author": "Elvis Onobo",

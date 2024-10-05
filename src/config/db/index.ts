@@ -44,4 +44,5 @@ class Database {
 
 const instance = new Database({ host: config.dbHost, port: config.dbPort, database: config.dbName, user: config.dbUser, password: config.dbPassword });
 const db = instance.connect()
+
 export default db
