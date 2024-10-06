@@ -1,4 +1,4 @@
-import {describe, expect, it, afterAll} from '@jest/globals';
+import {describe, expect, it} from '@jest/globals';
 import request from "supertest";
 import app from "../../src/app"
 import db from "../../src/config/db"
@@ -11,10 +11,6 @@ const subcategy1 = "Boys"
 const subcategy2 = "Girls"
 
 describe("Category", () => {
-    afterAll(() => {
-        db.$pool.end()
-    })
-
     it("POST /category should create a new category", async () => {
         const response = await request(app)
            .post(`${baseUrl}/category`)

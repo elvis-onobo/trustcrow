@@ -1,5 +1,5 @@
 import { config } from '../index';
-import pgp, { IMain } from 'pg-promise';
+import pgp from 'pg-promise';
 import promise from "bluebird";
 import logger from '../../utils/logger';
 import { DatabaseConfig } from './interface.db'
@@ -25,24 +25,21 @@ class Database {
     }
 
     public connect() {
-        const pg = pgp({ promiseLib: promise, noWarnings: false });
+        const pg = pgp({ promiseLib: promise, noWarnings: false,  });
         const initOptions = {
             host: this.host,
             user: this.user,
             port: this.port,
             password: this.password,
             database: this.database,
+            allowExitOnIdle: true
         }
         const client = pg(initOptions);
-
-        client.connect().then(instance => {
-            logger.info(`Connected to database: ${instance.client.database}`);
-        }).catch(err => (config.environment != environments.TEST) ? logger.error(err): console.log(err))
         return client;
     }
 }
 
 const instance = new Database({ host: config.dbHost, port: config.dbPort, database: config.dbName, user: config.dbUser, password: config.dbPassword });
 const db = instance.connect()
-
+logger.info(`Connected to db ${config.dbName}`)
 export default db
