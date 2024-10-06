@@ -48,6 +48,17 @@ Run `npm run dev` to serve the app with hot reload at `localhost:3000` or `http:
 
 ---
 
+# Running the test suite
+
+You may type `npm run test` or `npm t` in your terminal to run the test suite.
+
+A different database is required for tests to run which is why the Docker Compose way is the better choice. However, 
+you may replace the environment variables for the test database with the same values for the dev connection.
+
+A side effect you may experience if using the same database for test and development is that the data in the database will always be cleared since the test suite has to drop all data to run everything afresh.
+
+---
+
 ## Technologies
 
 - Node JS
